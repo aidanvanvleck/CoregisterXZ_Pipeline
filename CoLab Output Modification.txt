@@ -1,0 +1,24 @@
+For no label stats, paste this into the "Do the Work" section. This separates the |u| and |v| outputs onto two different lines as well
+____________________________________
+
+# Print stats
+print('Fit Statistics:')
+print('---------------')
+print("%.3f" %
+  (fp.u_norm_mm()*1e3) )
+print("%.3f" %
+  (fp.v_norm_mm()*1e3 ) )
+print("%.3f" % fp.distance_from_origin_mm())
+print("%.2f" % fp.xy_rotation_deg())
+print("%.2f" % fp.tilt_deg())
+
+
+
+Resulting Output:
+Fit Statistics:		Labels and units (added in)
+---------------
+0.759			Pixel size |u|		(um)
+0.759			Pixel size |V|		(um)
+0.092			Distance from Origin	(mm)
+39.05			X-Y Rotation		(deg)
+8.60			Tilt 			(deg)
