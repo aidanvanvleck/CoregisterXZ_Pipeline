@@ -1,7 +1,7 @@
 %   Updated: 2024.11.7, AVV
 %   Further documentation on the Skin CoRegistration protocol can be found in the YoLab - Current Projects Google drive. 
 %   Google Drive Folder Path: YoLab - Current Projects/_Components and General Protocols/Skin CoRegistration Protocol/ Reference Protocol for Fluorescent Skin CoRegistration (XZ)
-%   Link to Reference Protocol: https://docs.google.com/document/d/1-fYOJLyQK2c38IUVoarcfj_TPqYVu_sRxUwiC_I94dQ/edit?tab=t.0#heading=h.nw90t991hz9y
+%   Link to Reference Protocol: https://docs.google.com/document/d/1KUnpuI36MQvX3E29HvcNMlztZdPCnHxa7kklqnhdchs/edit?usp=sharing
 
 %   Script Description:  
 %   Mandatory Inputs to Modify: For each sample, two inputs must be modified. 
@@ -12,8 +12,8 @@
 
 function mark_lines_in_image()
     % Define the folder path
-    inputFolder = 'E:\Shared drives\Yolab - Current Projects\[Project] OCT2Hist 40x\LM\LM-09\RawData\Slides\Slides06_AnnotatedCropped';
-    mainCoRegistrationFolder = 'E:\Shared drives\Yolab - Current Projects\[Project] OCT2Hist 40x\LM\LM-09'
+    inputFolder = '';
+    mainCoRegistrationFolder = ''
 
 
     % Get a list of all image files in the folder

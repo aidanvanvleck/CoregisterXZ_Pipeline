@@ -3,7 +3,7 @@
 //  Updated: 2024.11.4, Aidan Van Vleck
 //  Further documentation on the Skin CoRegistration protocol can be found in the YoLab - Current Projects Google drive. 
 //  Google Drive Folder Path: YoLab - Current Projects/_Components and General Protocols/Skin CoRegistration Protocol/ Reference Protocol for Fluorescent Skin CoRegistration (XZ)
-//  Link to Reference Protocol: https://docs.google.com/document/d/1-fYOJLyQK2c38IUVoarcfj_TPqYVu_sRxUwiC_I94dQ/edit?tab=t.0#heading=h.nw90t991hz9y
+//  Link to Reference Protocol: https://docs.google.com/document/d/1KUnpuI36MQvX3E29HvcNMlztZdPCnHxa7kklqnhdchs/edit?usp=sharing
 
 //  Script Description = Export layers from Illustrator as PNGs with the same name as the layer. It is called within Illustrator's File/Scripts menu. User can choose to select individual layers, all layers, or visible layers. Layers will be exported individually (all other layers made invisible)
 //  Setting Script up for Use: This script must be run in an open document in Adobe Illustrator. This script must be placed within Adobe Illustrator's Presets/en_US/Scripts folder. This only needs to be done once, or whenever you need to update the script. 

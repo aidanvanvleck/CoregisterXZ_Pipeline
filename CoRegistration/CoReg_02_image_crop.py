@@ -1,14 +1,46 @@
 #   Updated: 2025.4.2, AVV
 #   Further documentation on the Skin CoRegistration protocol can be found in the YoLab - Current Projects Google drive. 
 #   Google Drive Folder Path: YoLab - Current Projects/_Components and General Protocols/Skin CoRegistration Protocol/ Reference Protocol for Fluorescent Skin CoRegistration (XZ)
-#   Link to Reference Protocol: https://docs.google.com/document/d/1-fYOJLyQK2c38IUVoarcfj_TPqYVu_sRxUwiC_I94dQ/edit?tab=t.0#heading=h.nw90t991hz9y
+#   Link to Reference Protocol: https://docs.google.com/document/d/1KUnpuI36MQvX3E29HvcNMlztZdPCnHxa7kklqnhdchs/edit?usp=sharing
 
 #   Script Description: This script will be used to crop fluorescent images to a standard size. It is intended to be used on images that have been brightened/contrast enhanced and leveled.
 #   Mandatory Inputs to Modify: 
 #       input_folder: The folder path to the images you wish to crop. Normally, this will be the Slides03_Leveled folder within your sample folder
 #           Example: C:\YoLab - Current Projects\[Project]OCT2Hist 40x\LM\LM-01\RawData\Slides\Slides03_Leveled
 #       crop_size: the size (x, y) you wish to crop your images to in pixels. This should be large enough to include all of the lines.
-#   Optional Inputs to Modify: 
+
+# =============================== SETUP README ===============================
+# This script uses Tkinter and Pillow to display and crop high-resolution images.
+# On macOS, the default system Python and Homebrew Python do not include GUI support.
+# To ensure compatibility, follow these setup steps using Miniforge:
+
+# --- One-Time Setup (macOS Only) ---
+# 1. Install Miniforge (a lightweight Conda-based Python with GUI support):
+#    Open Terminal and run:
+#      curl -L https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh -o miniforge.sh
+#      bash miniforge.sh
+#
+#    Follow the installer prompts and restart your Terminal afterward.
+
+# 2. Create a Python environment for image cropping:
+#      conda create -n image_crop_env python=3.11 pillow numpy
+#      conda activate image_crop_env
+
+# 3. (Optional) Test that Tkinter is working:
+#      python -c "import tkinter; print(tkinter.Tk().tk.eval('info patchlevel'))"
+#    You should see a version like "8.6.13" with no errors.
+
+# --- Running the Script in VS Code ---
+# 1. Open VS Code and this script file.
+# 2. Open the Command Palette (Cmd + Shift + P) → Select: "Python: Select Interpreter"
+# 3. Choose the one that matches: "Python 3.11.x ('image_crop_env': conda)"
+#
+# VS Code will now use the correct interpreter that supports GUI windows and image display.
+
+# This setup ensures cross-platform compatibility between Mac and PC without modifying the script.
+# =====================================================================
+
+
 
 import os
 import re
@@ -18,7 +50,7 @@ from PIL import Image, ImageTk
 
 ## Inputs ##
 input_folder = ''  # Specify your input folder here or leave it empty to prompt user
-crop_size = (3500, 500)  # Actual cropping size in pixels for the original image
+crop_size = (2400, 400)  # Actual cropping size in pixels for the original image
 
 class ImageCropper:
     def __init__(self, root, input_folder):

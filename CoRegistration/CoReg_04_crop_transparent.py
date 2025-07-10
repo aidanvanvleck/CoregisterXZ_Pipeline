@@ -1,7 +1,7 @@
 #   Updated: 2024.11.4, AVV
 #   Further documentation on the Skin CoRegistration protocol can be found in the YoLab - Current Projects Google drive. 
 #   Google Drive Folder Path: YoLab - Current Projects/_Components and General Protocols/Skin CoRegistration Protocol/ Reference Protocol for Fluorescent Skin CoRegistration (XZ)
-#   Link to Reference Protocol: https://docs.google.com/document/d/1-fYOJLyQK2c38IUVoarcfj_TPqYVu_sRxUwiC_I94dQ/edit?tab=t.0#heading=h.nw90t991hz9y
+#   Link to Reference Protocol: https://docs.google.com/document/d/1KUnpuI36MQvX3E29HvcNMlztZdPCnHxa7kklqnhdchs/edit?usp=sharing
 
 #   Script Description: This script will remove all transparent pixels from all .png images within a provided folder. It should be used on the output images from exportLayersAsCSS_PNGs_2.jsx, which are exported with significant empty space from Illustrator. 
 #   Mandatory Inputs to Modify: For each sample, there are two inputs that need to be modified. 
@@ -18,8 +18,8 @@ import os
 
 
 # Define the input and output folders. 
-input_folder = 'E:\Shared drives\Yolab - Current Projects\[Project] OCT2Hist 40x\LM\LM-09\RawData\Slides\Slides05_Annotated'           # File path to input folder, which should be labeled "Slides05_Annotated". Example file path: ...\LM-01\RawData\Slides\Slides05_Annotated
-output_folder = 'E:\Shared drives\Yolab - Current Projects\[Project] OCT2Hist 40x\LM\LM-09\RawData\Slides\Slides06_AnnotatedCropped'   # File path to output folder, which should be labeled "Slides06_Annotated". Example file path: ...\LM-01\RawData\Slides\Slides06_Annotated
+input_folder = ''           # File path to input folder, which should be labeled "Slides05_Annotated". Example file path: ...\LM-01\RawData\Slides\Slides05_Annotated
+output_folder = ''   # File path to output folder, which should be labeled "Slides06_Annotated". Example file path: ...\LM-01\RawData\Slides\Slides06_Annotated
 
 
 

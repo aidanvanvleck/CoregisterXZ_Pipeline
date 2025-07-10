@@ -1,7 +1,7 @@
 #   Updated: 2024.11.4, AVV
 #   Further documentation on the Skin CoRegistration protocol can be found in the YoLab - Current Projects Google drive. 
 #   Google Drive Folder Path: YoLab - Current Projects/_Components and General Protocols/Skin CoRegistration Protocol/ Reference Protocol for Fluorescent Skin CoRegistration (XZ)
-#   Link to Reference Protocol: https://docs.google.com/document/d/1-fYOJLyQK2c38IUVoarcfj_TPqYVu_sRxUwiC_I94dQ/edit?tab=t.0#heading=h.nw90t991hz9y
+#   Link to Reference Protocol: https://docs.google.com/document/d/1KUnpuI36MQvX3E29HvcNMlztZdPCnHxa7kklqnhdchs/edit?usp=sharing
 
 #   Script Description: This script will add a white box to a 3D OCT volume, mimicking the square photobleached in the central 250um of the OCT scanning region. Do not use this script unless you have photobleached the square in the central 250x250 um of the OCT scan.
 #   Recommended input file: The user should provide a *flattened* 3D OCT volume that has been resliced from the bottom so the default view is XY (as of 2024.11.4 default orientation after scanning and reconstructing is XZ). Slice 1 should be the lowest point in the scan. 
@@ -19,7 +19,7 @@ enhance_contrast = False  # Set to True to apply contrast enhancement, False to 
 clip_limit = 0.001  # Adjust the clip limit for contrast enhancement (lower values = less enhancement)
 
 # Path to the 3D volume
-input_file = "G:\Shared drives\Yolab - Current Projects\[Project] OCT2Hist 40x\LM\LM-08\CoRegistration\Z-StackReconstruction__dQ-1.443e+08_fS20_tRI1.33_focus450_XY_CE_Cropped.tif"
+input_file = ''
 
 # Load the 3D .tif file (ensure correct pixel type, e.g., uint16 if necessary)
 volume = tiff.imread(input_file).astype(np.uint16)

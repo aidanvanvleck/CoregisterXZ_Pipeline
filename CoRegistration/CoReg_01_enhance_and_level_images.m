@@ -1,7 +1,7 @@
 %   Updated: 2024.11.4, AVV
 %   Further documentation on the Skin CoRegistration protocol can be found in the YoLab - Current Projects Google drive. 
 %   Google Drive Folder Path: YoLab - Current Projects/_Components and General Protocols/Skin CoRegistration Protocol/ Reference Protocol for Fluorescent Skin CoRegistration (XZ)
-%   Link to Reference Protocol: https://docs.google.com/document/d/1-fYOJLyQK2c38IUVoarcfj_TPqYVu_sRxUwiC_I94dQ/edit?tab=t.0#heading=h.nw90t991hz9y
+%   Link to Reference Protocol: https://docs.google.com/document/d/1KUnpuI36MQvX3E29HvcNMlztZdPCnHxa7kklqnhdchs/edit?usp=sharing
 
 %   Script Description:  This script will perform two basic steps to prepare raw fluorescent images for Marked Line Analysis. First, the script will automatically brighten and enhance the contrast of the images, saving them to a folder, "Slides02_BrightenedCE". Then, the script will allow the user to manually level the images by selecting two points to define the level line, and then saving the images in another folder called "Slides03_Leveled".
 %   Mandatory Inputs to Modify: For each sample, two inputs must be modified. 
@@ -21,8 +21,8 @@
 function enhance_and_level_images()
     
     % Inputs: Modify these paths for your dataset
-    inputFolder = 'G:\Shared drives\Yolab - Current Projects\[Project] OCT2Hist 40x\LM\LM-09\RawData\Slides\Slides01_Raw\Fluorescent';  
-    mainSlidesFolder = 'G:\Shared drives\Yolab - Current Projects\[Project] OCT2Hist 40x\LM\LM-09\RawData\Slides';
+    inputFolder = '';  
+    mainSlidesFolder = '';
 
     % Toggle for Phase 1 (Enhance and Save Images)
     runPhase1 = true; % Set to false to skip Phase 1 and directly proceed to leveling
@@ -111,10 +111,6 @@ function enhance_and_level_images()
         % Rotate the image to align the selected line horizontally
         rotatedImg = imrotate(img, angle, 'bicubic', 'loose');  % Changed from 'crop' to 'loose'
         
-        % Display the rotated image
-        imshow(rotatedImg, 'InitialMagnification', 'fit');
-        title('Rotated Image');
-    
         % If the rotation is still incorrect, invert the angle
         % rotatedImg = imrotate(img, -angle, 'bicubic', 'crop'); % Uncomment this if needed
     

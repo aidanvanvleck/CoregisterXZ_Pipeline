@@ -1,7 +1,7 @@
 %   Updated: 2024.11.4, AVV
 %   Further documentation on the Skin CoRegistration protocol can be found in the YoLab - Current Projects Google drive. 
 %   Google Drive Folder Path: YoLab - Current Projects/_Components and General Protocols/Skin CoRegistration Protocol/ Reference Protocol for Fluorescent Skin CoRegistration (XZ)
-%   Link to Reference Protocol: https://docs.google.com/document/d/1-fYOJLyQK2c38IUVoarcfj_TPqYVu_sRxUwiC_I94dQ/edit?tab=t.0#heading=h.nw90t991hz9y
+%   Link to Reference Protocol: https://docs.google.com/document/d/1KUnpuI36MQvX3E29HvcNMlztZdPCnHxa7kklqnhdchs/edit?tab=t.0
 
 %   Script Description:  This script will create the folder architecture used for each sample to ensure data is always saved in the same format. 
 %   Mandatory Inputs to Modify: 
